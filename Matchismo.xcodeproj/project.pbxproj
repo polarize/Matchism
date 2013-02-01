@@ -35,6 +35,9 @@
 		C2CE146116BBFAB200B955C0 /* flipMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146016BBFAB200B955C0 /* flipMeIcon.png */; };
 		C2CE146316BBFB3600B955C0 /* flipMeIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146216BBFB3600B955C0 /* flipMeIcon_57x57.png */; };
 		C2CE146516BBFB6D00B955C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146416BBFB6D00B955C0 /* Default.png */; };
+		C2CE146816BC3BC700B955C0 /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146616BC3BC600B955C0 /* Storyboard_iPad.storyboard */; };
+		C2CE146C16BC44F300B955C0 /* Card_Front_iPad_165x232.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146B16BC44F300B955C0 /* Card_Front_iPad_165x232.jpg */; };
+		C2CE147216BC477900B955C0 /* CardGameiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CE147116BC477800B955C0 /* CardGameiPadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,10 @@
 		C2CE146016BBFAB200B955C0 /* flipMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flipMeIcon.png; path = ../flipMeIcon.png; sourceTree = "<group>"; };
 		C2CE146216BBFB3600B955C0 /* flipMeIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flipMeIcon_57x57.png; path = ../flipMeIcon_57x57.png; sourceTree = "<group>"; };
 		C2CE146416BBFB6D00B955C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		C2CE146716BC3BC700B955C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Storyboard_iPad.storyboard; sourceTree = "<group>"; };
+		C2CE146B16BC44F300B955C0 /* Card_Front_iPad_165x232.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Card_Front_iPad_165x232.jpg; sourceTree = "<group>"; };
+		C2CE147016BC477800B955C0 /* CardGameiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardGameiPadViewController.h; path = Controller/CardGameiPadViewController.h; sourceTree = "<group>"; };
+		C2CE147116BC477800B955C0 /* CardGameiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardGameiPadViewController.m; path = Controller/CardGameiPadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +129,14 @@
 		C29E3CF516BAFD800077264F /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				C2CE146D16BC470900B955C0 /* Controller */,
+				C2CE146916BC44F300B955C0 /* Artworks */,
 				C2CE144F16BBC9F600B955C0 /* Assets */,
 				C29E3D1216BB01C20077264F /* Model */,
 				C29E3CFE16BAFD800077264F /* CardGameAppDelegate.h */,
 				C29E3CFF16BAFD800077264F /* CardGameAppDelegate.m */,
 				C29E3D0716BAFD800077264F /* MainStoryboard.storyboard */,
-				C29E3D0A16BAFD800077264F /* CardGameViewController.h */,
-				C29E3D0B16BAFD800077264F /* CardGameViewController.m */,
+				C2CE146616BC3BC600B955C0 /* Storyboard_iPad.storyboard */,
 				C29E3CF616BAFD800077264F /* Supporting Files */,
 			);
 			path = Matchismo;
@@ -182,6 +190,49 @@
 				C29E3D0516BAFD800077264F /* Default-568h@2x.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		C2CE146916BC44F300B955C0 /* Artworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE146A16BC44F300B955C0 /* iPad */,
+			);
+			path = Artworks;
+			sourceTree = "<group>";
+		};
+		C2CE146A16BC44F300B955C0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE146B16BC44F300B955C0 /* Card_Front_iPad_165x232.jpg */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		C2CE146D16BC470900B955C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE146F16BC473300B955C0 /* iPad */,
+				C2CE146E16BC472700B955C0 /* iPhone */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C2CE146E16BC472700B955C0 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C29E3D0A16BAFD800077264F /* CardGameViewController.h */,
+				C29E3D0B16BAFD800077264F /* CardGameViewController.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		C2CE146F16BC473300B955C0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE147016BC477800B955C0 /* CardGameiPadViewController.h */,
+				C2CE147116BC477800B955C0 /* CardGameiPadViewController.m */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +304,8 @@
 				C2CE146116BBFAB200B955C0 /* flipMeIcon.png in Resources */,
 				C2CE146316BBFB3600B955C0 /* flipMeIcon_57x57.png in Resources */,
 				C2CE146516BBFB6D00B955C0 /* Default.png in Resources */,
+				C2CE146816BC3BC700B955C0 /* Storyboard_iPad.storyboard in Resources */,
+				C2CE146C16BC44F300B955C0 /* Card_Front_iPad_165x232.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +324,7 @@
 				C29E3D1B16BB02AC0077264F /* PlayingCard.m in Sources */,
 				C29E3D1E16BB02C30077264F /* PlayingCardDeck.m in Sources */,
 				C29E3D2116BB2C980077264F /* CardMatchingGame.m in Sources */,
+				C2CE147216BC477900B955C0 /* CardGameiPadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +345,14 @@
 				C29E3D0816BAFD800077264F /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C2CE146616BC3BC600B955C0 /* Storyboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2CE146716BC3BC700B955C0 /* en */,
+			);
+			name = Storyboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,7 +420,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -369,7 +433,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
