@@ -9,8 +9,8 @@
 #import "CardMatchingGame.h"
 
 @interface CardMatchingGame()
-@property (strong, nonatomic) NSMutableArray *cards;
-
+@property (strong, nonatomic) NSMutableArray *cards;// of Card
+@property (nonatomic) int historyCount;
 @property (nonatomic) int score;
 
 @end
@@ -24,6 +24,14 @@
         _cards = [[NSMutableArray alloc]init];
     }
     return _cards;
+}
+
+-(NSMutableDictionary *)flipHistory
+{
+    if (!_flipHistory) {
+        _flipHistory = [[NSMutableDictionary alloc]init];
+    }
+    return _flipHistory;
 }
 
 -(id)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
@@ -64,15 +72,32 @@
                         otherCard.unplayble = YES;
                         card.unplayble = YES;
                         self.score += matchScore * MATCH_BONUS;
+                        
+                        // Create the description of the move when there is a match
+                        self.lastMoveDescription = [NSString stringWithFormat:
+                                                    @"Matched %@%@%@%@%d%@", card.contents,
+                                                    @" & ", otherCard.contents,
+                                                    @" for ", matchScore * MATCH_BONUS, @" points"];
+                        
                     } else {
                         otherCard.faceUP = NO;
                         self.score -= MISMATCH_PENALTY;
+                        // Create the description of the move when there is a mismatch
+                        self.lastMoveDescription = [NSString stringWithFormat:@"%@%@%@%@%d%@",
+                                                    card.contents, @" & ",
+                                                    otherCard.contents, @" don't match! ",
+                                                    MISMATCH_PENALTY, @" point penalty!"];
                     }
                     break;
+                }else {
+                    // Create the description of the move when a card is flipped up
+                    self.lastMoveDescription = [NSString stringWithFormat:@"Flipped up %@", card.contents];
                 }
                 
             }
             self.score -= FLIP_COST;
+            // Add the description of the move to our dictionary of history
+            [self.flipHistory setValue:self.lastMoveDescription forKey:[NSString stringWithFormat:@"%d", self.historyCount++]];
         }
         
         

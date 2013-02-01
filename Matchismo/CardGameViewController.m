@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *lastFlipResult;
+
 @property (nonatomic) int flipCount;
 
 //@property (strong, nonatomic) Deck *deck;
@@ -60,6 +62,10 @@
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    // Update last move label
+    self.lastFlipResult.text = self.game.lastMoveDescription;
+    // Make sure the alpha is 1 on our label
+    self.lastFlipResult.alpha = 1.0;
     
 }
 
@@ -80,7 +86,6 @@
 }
 - (IBAction)replay:(UIButton *)sender {
     self.flipCount = 0;
-   // _game = [[CardMatchingGame alloc]initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc]init]];
     
     self.game = nil;
     [self updateUI];

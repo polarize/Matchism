@@ -18,4 +18,7 @@
 
 @property (nonatomic, readonly) int score;
 
+@property (strong, nonatomic) NSString *lastMoveDescription;
+@property (strong, nonatomic) NSMutableDictionary *flipHistory;
+
 @end
