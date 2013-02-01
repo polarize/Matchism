@@ -78,5 +78,14 @@
     [self updateUI];
      
 }
+- (IBAction)replay:(UIButton *)sender {
+    self.flipCount = 0;
+   // _game = [[CardMatchingGame alloc]initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc]init]];
+    
+    self.game = nil;
+    [self updateUI];
+    
+}
+
 
 @end

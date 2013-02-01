@@ -31,6 +31,11 @@
 		C2CE145816BBCDA200B955C0 /* Matchsmo_back_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE145616BBCDA200B955C0 /* Matchsmo_back_HD.png */; };
 		C2CE145916BBCDA200B955C0 /* Matchsmo_Front_HD.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE145716BBCDA200B955C0 /* Matchsmo_Front_HD.png */; };
 		C2CE145B16BBE39900B955C0 /* Matchsmo_youppi.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE145A16BBE39900B955C0 /* Matchsmo_youppi.png */; };
+		C2CE145D16BBEE8000B955C0 /* playagain_button168x56.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE145C16BBEE8000B955C0 /* playagain_button168x56.png */; };
+		C2CE145F16BBF55F00B955C0 /* playagain_button_texur_168x56.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE145E16BBF55E00B955C0 /* playagain_button_texur_168x56.png */; };
+		C2CE146116BBFAB200B955C0 /* flipMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146016BBFAB200B955C0 /* flipMeIcon.png */; };
+		C2CE146316BBFB3600B955C0 /* flipMeIcon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146216BBFB3600B955C0 /* flipMeIcon_57x57.png */; };
+		C2CE146516BBFB6D00B955C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CE146416BBFB6D00B955C0 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		C2CE145616BBCDA200B955C0 /* Matchsmo_back_HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Matchsmo_back_HD.png; sourceTree = "<group>"; };
 		C2CE145716BBCDA200B955C0 /* Matchsmo_Front_HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Matchsmo_Front_HD.png; sourceTree = "<group>"; };
 		C2CE145A16BBE39900B955C0 /* Matchsmo_youppi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Matchsmo_youppi.png; sourceTree = "<group>"; };
+		C2CE145C16BBEE8000B955C0 /* playagain_button168x56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playagain_button168x56.png; sourceTree = "<group>"; };
+		C2CE145E16BBF55E00B955C0 /* playagain_button_texur_168x56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playagain_button_texur_168x56.png; sourceTree = "<group>"; };
+		C2CE146016BBFAB200B955C0 /* flipMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipMeIcon.png; sourceTree = "<group>"; };
+		C2CE146216BBFB3600B955C0 /* flipMeIcon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipMeIcon_57x57.png; sourceTree = "<group>"; };
+		C2CE146416BBFB6D00B955C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,9 @@
 		C29E3CE316BAFD7F0077264F = {
 			isa = PBXGroup;
 			children = (
+				C2CE146416BBFB6D00B955C0 /* Default.png */,
+				C2CE146216BBFB3600B955C0 /* flipMeIcon_57x57.png */,
+				C2CE146016BBFAB200B955C0 /* flipMeIcon.png */,
 				C29E3CF516BAFD800077264F /* Matchismo */,
 				C29E3CEE16BAFD800077264F /* Frameworks */,
 				C29E3CED16BAFD800077264F /* Products */,
@@ -162,6 +175,8 @@
 		C2CE144F16BBC9F600B955C0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C2CE145E16BBF55E00B955C0 /* playagain_button_texur_168x56.png */,
+				C2CE145C16BBEE8000B955C0 /* playagain_button168x56.png */,
 				C2CE145A16BBE39900B955C0 /* Matchsmo_youppi.png */,
 				C2CE145416BBCB2300B955C0 /* Matchsmo_back_wihte.png */,
 				C2CE145016BBCA0500B955C0 /* Matchsmo_back.png */,
@@ -237,6 +252,11 @@
 				C2CE145816BBCDA200B955C0 /* Matchsmo_back_HD.png in Resources */,
 				C2CE145916BBCDA200B955C0 /* Matchsmo_Front_HD.png in Resources */,
 				C2CE145B16BBE39900B955C0 /* Matchsmo_youppi.png in Resources */,
+				C2CE145D16BBEE8000B955C0 /* playagain_button168x56.png in Resources */,
+				C2CE145F16BBF55F00B955C0 /* playagain_button_texur_168x56.png in Resources */,
+				C2CE146116BBFAB200B955C0 /* flipMeIcon.png in Resources */,
+				C2CE146316BBFB3600B955C0 /* flipMeIcon_57x57.png in Resources */,
+				C2CE146516BBFB6D00B955C0 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
